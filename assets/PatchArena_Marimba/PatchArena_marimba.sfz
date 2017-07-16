@@ -1,0 +1,80 @@
+//-----------------------------------------------------------------------------------
+// sfz Definition File
+// 
+// sfz by Chad@PatchArena.com
+// 
+//-----------------------------------------------------------------------------------
+
+
+<group> 
+loop_mode=no_loop
+lovel=0
+hivel=127
+
+ampeg_attack=0.0
+ampeg_decay=0.005
+ampeg_hold=0
+ampeg_release=2.78221 
+ampeg_sustain=1001
+
+<region> trigger=attack  pitch_keycenter=36 lokey=36 hikey=36 sample=PatchArena_marimba-036-c1.wav
+<region> trigger=attack  pitch_keycenter=37 lokey=37 hikey=37 sample=PatchArena_marimba-037-c#1.wav
+<region> trigger=attack  pitch_keycenter=38 lokey=38 hikey=38 sample=PatchArena_marimba-038-d1.wav
+<region> trigger=attack  pitch_keycenter=39 lokey=39 hikey=39 sample=PatchArena_marimba-039-d#1.wav
+<region> trigger=attack  pitch_keycenter=40 lokey=40 hikey=40 sample=PatchArena_marimba-040-e1.wav
+<region> trigger=attack  pitch_keycenter=41 lokey=41 hikey=41 sample=PatchArena_marimba-041-f1.wav
+<region> trigger=attack  pitch_keycenter=42 lokey=42 hikey=42 sample=PatchArena_marimba-042-f#1.wav
+<region> trigger=attack  pitch_keycenter=43 lokey=43 hikey=43 sample=PatchArena_marimba-043-g1.wav
+<region> trigger=attack  pitch_keycenter=44 lokey=44 hikey=44 sample=PatchArena_marimba-044-g#1.wav
+<region> trigger=attack  pitch_keycenter=45 lokey=45 hikey=45 sample=PatchArena_marimba-045-a1.wav
+<region> trigger=attack  pitch_keycenter=46 lokey=46 hikey=46 sample=PatchArena_marimba-046-a#1.wav
+<region> trigger=attack  pitch_keycenter=47 lokey=47 hikey=47 sample=PatchArena_marimba-047-h1.wav
+<region> trigger=attack  pitch_keycenter=48 lokey=48 hikey=48 sample=PatchArena_marimba-048-c2.wav
+<region> trigger=attack  pitch_keycenter=49 lokey=49 hikey=49 sample=PatchArena_marimba-049-c#2.wav
+<region> trigger=attack  pitch_keycenter=50 lokey=50 hikey=50 sample=PatchArena_marimba-050-d2.wav
+<region> trigger=attack  pitch_keycenter=51 lokey=51 hikey=51 sample=PatchArena_marimba-051-d#2.wav
+<region> trigger=attack  pitch_keycenter=52 lokey=52 hikey=52 sample=PatchArena_marimba-052-e2.wav
+<region> trigger=attack  pitch_keycenter=53 lokey=53 hikey=53 sample=PatchArena_marimba-053-f2.wav
+<region> trigger=attack  pitch_keycenter=54 lokey=54 hikey=54 sample=PatchArena_marimba-054-f#2.wav
+<region> trigger=attack  pitch_keycenter=55 lokey=55 hikey=55 sample=PatchArena_marimba-055-g2.wav
+<region> trigger=attack  pitch_keycenter=56 lokey=56 hikey=56 sample=PatchArena_marimba-056-g#2.wav
+<region> trigger=attack  pitch_keycenter=57 lokey=57 hikey=57 sample=PatchArena_marimba-057-a2.wav
+<region> trigger=attack  pitch_keycenter=58 lokey=58 hikey=58 sample=PatchArena_marimba-058-a#2.wav
+<region> trigger=attack  pitch_keycenter=59 lokey=59 hikey=59 sample=PatchArena_marimba-059-h2.wav
+<region> trigger=attack  pitch_keycenter=60 lokey=60 hikey=60 sample=PatchArena_marimba-060-c3.wav
+<region> trigger=attack  pitch_keycenter=61 lokey=61 hikey=61 sample=PatchArena_marimba-061-c#3.wav
+<region> trigger=attack  pitch_keycenter=62 lokey=62 hikey=62 sample=PatchArena_marimba-062-d3.wav
+<region> trigger=attack  pitch_keycenter=63 lokey=63 hikey=63 sample=PatchArena_marimba-063-d#3.wav
+<region> trigger=attack  pitch_keycenter=64 lokey=64 hikey=64 sample=PatchArena_marimba-064-e3.wav
+<region> trigger=attack  pitch_keycenter=65 lokey=65 hikey=65 sample=PatchArena_marimba-065-f3.wav
+<region> trigger=attack  pitch_keycenter=66 lokey=66 hikey=66 sample=PatchArena_marimba-066-f#3.wav
+<region> trigger=attack  pitch_keycenter=67 lokey=67 hikey=67 sample=PatchArena_marimba-067-g3.wav
+<region> trigger=attack  pitch_keycenter=68 lokey=68 hikey=68 sample=PatchArena_marimba-068-g#3.wav
+<region> trigger=attack  pitch_keycenter=69 lokey=69 hikey=69 sample=PatchArena_marimba-069-a3.wav
+<region> trigger=attack  pitch_keycenter=70 lokey=70 hikey=70 sample=PatchArena_marimba-070-a#3.wav
+<region> trigger=attack  pitch_keycenter=71 lokey=71 hikey=71 sample=PatchArena_marimba-071-h3.wav
+<region> trigger=attack  pitch_keycenter=72 lokey=72 hikey=72 sample=PatchArena_marimba-072-c4.wav
+<region> trigger=attack  pitch_keycenter=73 lokey=73 hikey=73 sample=PatchArena_marimba-073-c#4.wav
+<region> trigger=attack  pitch_keycenter=74 lokey=74 hikey=74 sample=PatchArena_marimba-074-d4.wav
+<region> trigger=attack  pitch_keycenter=75 lokey=75 hikey=75 sample=PatchArena_marimba-075-d#4.wav
+<region> trigger=attack  pitch_keycenter=76 lokey=76 hikey=76 sample=PatchArena_marimba-076-e4.wav
+<region> trigger=attack  pitch_keycenter=77 lokey=77 hikey=77 sample=PatchArena_marimba-077-f4.wav
+<region> trigger=attack  pitch_keycenter=78 lokey=78 hikey=78 sample=PatchArena_marimba-078-f#4.wav
+<region> trigger=attack  pitch_keycenter=79 lokey=79 hikey=79 sample=PatchArena_marimba-079-g4.wav
+<region> trigger=attack  pitch_keycenter=80 lokey=80 hikey=80 sample=PatchArena_marimba-080-g#4.wav
+<region> trigger=attack  pitch_keycenter=81 lokey=81 hikey=81 sample=PatchArena_marimba-081-a4.wav
+<region> trigger=attack  pitch_keycenter=82 lokey=82 hikey=82 sample=PatchArena_marimba-082-a#4.wav
+<region> trigger=attack  pitch_keycenter=83 lokey=83 hikey=83 sample=PatchArena_marimba-083-h4.wav
+<region> trigger=attack  pitch_keycenter=84 lokey=84 hikey=84 sample=PatchArena_marimba-084-c5.wav
+<region> trigger=attack  pitch_keycenter=85 lokey=85 hikey=85 sample=PatchArena_marimba-085-c#5.wav
+<region> trigger=attack  pitch_keycenter=86 lokey=86 hikey=86 sample=PatchArena_marimba-086-d5.wav
+<region> trigger=attack  pitch_keycenter=87 lokey=87 hikey=87 sample=PatchArena_marimba-087-d#5.wav
+<region> trigger=attack  pitch_keycenter=88 lokey=88 hikey=88 sample=PatchArena_marimba-088-e5.wav
+<region> trigger=attack  pitch_keycenter=89 lokey=89 hikey=89 sample=PatchArena_marimba-089-f5.wav
+<region> trigger=attack  pitch_keycenter=90 lokey=90 hikey=90 sample=PatchArena_marimba-090-f#5.wav
+<region> trigger=attack  pitch_keycenter=91 lokey=91 hikey=91 sample=PatchArena_marimba-091-g5.wav
+<region> trigger=attack  pitch_keycenter=92 lokey=92 hikey=92 sample=PatchArena_marimba-092-g#5.wav
+<region> trigger=attack  pitch_keycenter=93 lokey=93 hikey=93 sample=PatchArena_marimba-093-a5.wav
+<region> trigger=attack  pitch_keycenter=94 lokey=94 hikey=94 sample=PatchArena_marimba-094-a#5.wav
+<region> trigger=attack  pitch_keycenter=95 lokey=95 hikey=95 sample=PatchArena_marimba-095-h5.wav
+<region> trigger=attack  pitch_keycenter=96 lokey=96 hikey=96 sample=PatchArena_marimba-096-c6.wav

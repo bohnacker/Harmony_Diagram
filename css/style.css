@@ -1,0 +1,26 @@
+body {
+	padding: 0; 
+	margin: 0; 
+	overflow:hidden;
+	background: #eee;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+} 
+
+canvas {
+	margin: 5px;
+}
+
+div {
+    background-color: #fff;
+	position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.pressed {
+	background-color: #fffff0;
+	
+}
