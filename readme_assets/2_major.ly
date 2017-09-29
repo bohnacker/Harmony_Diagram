@@ -1,25 +1,25 @@
 
+
 line_one = \relative c' {
-  <c e g>4 <c es g> 
+  <c e g>4 <des f as> <d fis a> <es g bes> 
+  <e gis b> <f a c> <fis ais cis> <g b d> 
+  <as c es> <a cis e> <bes d f> <b dis fis> 
 }
 
 
 \score {
   <<  
   \new Staff {
-    \new Voice = "one" \line_one
+    \new Voice = "one" \time 1/4 \line_one
   }
   >>
   \layout {
     \context {
       \Staff
       \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
     }
     \context {
       \Voice
-      \override Stem.length = #0
     }
     \context {
       \Score
