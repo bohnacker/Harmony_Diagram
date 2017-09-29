@@ -4,4 +4,4 @@ A [p5.js](http://p5js.org) project that displays the relations of all 40 possibl
 
 [Launch App](./app/)
 
-Let's view this on Github Pages...
+
