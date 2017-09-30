@@ -34,7 +34,7 @@ It is possible to create this kind of layout in 2D space, 3D space and even high
 
 ## The application
 
-When you launch the application (by clicking on the image below or on "Launch App" in this sites header) you see the harmony diagram in the main area. Each sphere represents on of the chords. Diminished chords are yellow, minor chords light green, major chords dark green and augmented chords blue.
+When you launch the application (by clicking on the image below or on "Launch App" in this sites header) you see the harmony diagram in the main area. Each sphere represents one of the chords. Diminished chords are yellow, minor chords light green, major chords dark green and augmented chords blue.
 
 ### Interaction:
 - Click and drag spheres
