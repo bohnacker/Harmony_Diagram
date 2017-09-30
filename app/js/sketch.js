@@ -30,7 +30,7 @@ var rolloverNode = undefined;
 
 var nodeDiameter = 7;
 
-var zoom = 1;
+var zoom = 2;
 var offset;
 var factor = 1.5;
 
