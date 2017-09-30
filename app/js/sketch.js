@@ -523,10 +523,11 @@ window.addEventListener(touchend, function(e) {
 });
 
 function createTrackpads() {
+    var labels = ["Rotate in 3D space", "Rotate in 4D space", "Rotate in 4D space"];
     for (var i = 0; i < 3; i++) {
         (function() {
             var id = i;
-            var pad = createDiv("");
+            var pad = createDiv(labels[i]);
             pad.elt.style.left = i * 210 + "px";
 
             pad.mousePressed(function(e) {

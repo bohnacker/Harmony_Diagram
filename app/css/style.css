@@ -14,13 +14,12 @@ canvas {
 }
 
 div {
-    background-color: #fff;
-	position: absolute;
-    width: 200px;
-    height: 200px;
+  background-color: #fff;
+  position: absolute;
+  width: 200px;
+  height: 200px;
 }
 
 .pressed {
-	background-color: #fffff0;
-	
+	background-color: #fffff0;	
 }
