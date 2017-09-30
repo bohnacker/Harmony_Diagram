@@ -4,7 +4,7 @@ Harmony Diagram is a [p5.js](http://p5js.org) project that displays the relation
 
 Harmonies are one of the main elements of music. They appear when two ore more notes are played together. In western music, the basic harmonies are triads. That is when exactly three notes come together. Below you see two examples: a c major and a c minor chord.
 
-![C major and c minor](readme_assets/1.svg)
+![C major and c minor](readme_assets/1_c_major_minor.svg)
 
 These two chords are quite closely related because you have to change only one note to get from one to the other. I wanted to know how a network structure would look like, if I connect all possible triads that differ only in one note. 
 
