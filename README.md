@@ -47,5 +47,7 @@ When you launch the application (by clicking on the image below or on "Launch Ap
 ## Acknowledgements
 
 Music encraving done with LilyPond 2.18.2 — [www.lilypond.org](www.lilypond.org)
+
 Programming of the app uses [p5.js](http://p5js.org)
+
 Marimba sounds from [PatchArena](http://patcharena.com/free-marimba-samples-patcharena-marimba-in-sfz-format/)
