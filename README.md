@@ -43,7 +43,6 @@ When you launch the application (by clicking on the image below or on "Launch Ap
 - Rotating: Use one of the "trackpads". The first one rotates the network in 3D space, the other two are rotating in 4D space. Rotation in 4D space is hard to imagine, so best would be to just play around with this.
 
 [![Launch app](readme_assets/4_app_screen.png)](./app/)
-[![Harmony Diagram](img/harmony.png)](Harmony_Diagram/)
 
 ## Acknowledgements
 
