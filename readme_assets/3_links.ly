@@ -18,13 +18,13 @@ line_one = \relative c' {
   % min → maj, 2.
   <d f a>      <d fis a>    \bar "."
 
-  % min → maj, 2.
+  % min → maj, 1.
   <d f a>      <f a c>    \bar "."
 
   % min → aug, 2.
   <d f a>      <des f a>    \bar "."
 
-  % maj → aug, 2.
+  % maj → aug, 3.
   <d fis a>      <d fis ais>    \bar "."
 
   s1 s2 s4
