@@ -541,7 +541,7 @@ function createTrackpads() {
   canvasLabel.elt.style.top = "5px";
   canvasLabel.elt.style.backgroundColor = "#0000";
 
-  chordLabel = createDiv("c minor");
+  chordLabel = createDiv("");
   chordLabel.elt.style.width = "200px";
   chordLabel.elt.style.height = "30px";
   chordLabel.elt.style.left = "5px";
