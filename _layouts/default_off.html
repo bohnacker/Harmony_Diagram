@@ -1,130 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    {% if page.title %}<title>{{ page.title }}</title>{% else %}<title>{{ site.title }}</title>{% endif %}
-    <link rel="icon" type="{{ site.favicon.mimetype }}" href="{{ site.favicon.name }}">
-    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/styles.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <meta name="author" content="{{ site.author.name }}">
-    <meta name="copyright" content="{{ site.license }} &copy; {{ site.author.name }} 2016">
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% else %}<meta name="description" content="{{ site.description }}">{% endif %}
+{% seo %}
 
-    {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% else %}<meta property="og:description" content="{{ site.description }}">{% endif %}
-    <meta property="og:url" content="{{ site.path }}" />
-    <meta property="og:site_name" content="{{ site.title }}" />
-    {% if page.title %}<meta property="og:title" content="{{ page.title }}" />{% else %}<meta property="og:title" content="{{ site.title }}" />{% endif %}
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="{{ site.baseurl }}/assets/img/{{ site.logo.name }}" />
-    <meta property="og:image:mimetype" content="{{ site.logo.mimetype }}" />
-    <meta property="og:image:width" content="{{ site.logo.width }}" />
-    <meta property="og:image:height" content="{{ site.logo.height }}" />
-
-    <!-- Twitter: card tags -->
-    <meta name="twitter:card" content="summary">
-    {% if page.title %}<meta name="twitter:title" content="{{ page.title }}" />{% else %}<meta name="twitter:title" content="{{ site.title }}" />{% endif %}
-    {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">{% else %}<meta name="twitter:description" content="{{ site.description }}">{% endif %}
-    <meta name="twitter:image" content="{{ site.baseurl }}/assets/img/{{ site.logo.name }}">
-    <meta name="twitter:url" content="{{ site.path }}">
-
-    <link rel="profile" href="https://github.com/RichardLitt/open-source-protocol/" />
-    <meta property="os:repo" content="{{ site.os.repo }}" />
-    <meta property="os:rcs_type" content="{{ site.os.rcs_type }}" />
-    <meta property="os:src" content="{{ site.os.src }}" />
-    <meta property="os:issue" content="{{ site.os.issues }}" />
-    <meta property="os:branch" content="{{ site.os.branch }}" />
-
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    {% if site.logo %}
-    <div class="header">
-     <img class='logo' src="{{ site.baseurl }}/assets/img/{{ site.logo.name }}" title="{{ site.title }}" alt="{{ site.title }}"/>
-    </div>
-    {% else %}
-    <div class="header">
-      <h1 class="project-name">{{ site.title }}</h1>
-      <h2 class="project-tagline">{{ site.description }}</h2>
-    </div>
-    {% endif %}
     <div class="wrapper">
+      <header>
+        <a href="{{ site.github.url }}"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        {{content}}
+        {% if site.github.is_project_page %}
+          <p class="view"><a href="./app/" class="btn">Launch App</a></p>
+          <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
+        {% endif %}
 
-        <h3>Source</h3>
+        {% if site.github.is_user_page %}
+          <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %}
 
-        <a class="github-button" href="{{ site.os.repo }}" data-icon="octicon-star" data-count-href="/{{ site.github }}/stargazers" data-count-api="/repos/{{ site.github }}#stargazers_count">Star</a>
-        <a class="github-button" href="{{ site.os.repo }}" data-icon="octicon-git-branch" data-count-href="/{{ site.github }}/network" data-count-api="/repos/{{ site.github }}#forks_count">Fork</a>
-        <p class="maintainer">This project is maintained by <a href="{{ site.maintainer.link }}">{{ site.maintainer.name }}</a>.</p>
-    </div>
+        {% if site.show_downloads %}
+          <ul>
+            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+            <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+            <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+          </ul>
+        {% endif %}
+      </header>
+      <section>
 
-    <script src="javascripts/scale.fix.js"></script>
-
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      </script>
-      <script type="text/javascript">
-      try {
-      var pageTracker = _gat._getTracker("{{ site.google_analytics }}");
-      pageTracker._trackPageview();
-      } catch(err) {}
-    </script>
-    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-  </body>
-</html>
-
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
-    <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="./app/" class="btn">Launch App</a>
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-    </section>
-
-    <section class="main-content">
       {{ content }}
 
-      <footer class="site-footer">
+      </section>
+      <footer>
         {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
-    </section>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
-    {% if site.google_analytics %}
-      <script type="text/javascript">
+
+  {% if site.google_analytics %}
+    <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
-      </script>
-    {% endif %}
+    </script>
+  {% endif %}
   </body>
 </html>
